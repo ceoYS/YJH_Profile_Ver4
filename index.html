@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>윤제훈 | Business Profile</title>
+<meta property="og:title" content="윤제훈 | Business Profile">
+<meta property="og:description" content="20세 첫 창업, 누적 11억 매출의 실행형 창업가">
+<meta property="og:type" content="website">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#F8FAFC;--white:#FFFFFF;--navy:#1A365D;--navy-l:#2D4A7A;--orange:#FF5A36;--sub:#64748B;--muted:#94A3B8;--line:#E2E8F0;--card-bg:#FFFFFF}
+html{scroll-behavior:smooth}
+body{font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,'Helvetica Neue','Segoe UI','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;background:var(--bg);color:var(--navy);line-height:1.7;-webkit-font-smoothing:antialiased}
+.inter{font-family:'Inter',sans-serif}
+.serif-i{font-family:'Playfair Display',serif;font-style:italic;font-weight:700}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+.card{background:var(--white);border-radius:16px;padding:48px 40px;margin-bottom:0;box-shadow:0 1px 3px rgba(26,54,93,0.04)}
+.main-card{margin-top:40px;margin-bottom:40px;border-radius:16px;overflow:hidden}
+.divider{height:1px;background:var(--line);margin:40px 0}
+/* Hero */
+.hero-top{display:flex;align-items:center;gap:8px;margin-bottom:20px}
+.hero-top span{font-size:12px;color:var(--orange);font-weight:600;letter-spacing:0.05em}
+.hero-top .dot{width:6px;height:6px;background:var(--orange);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+h1{font-size:30px;font-weight:800;letter-spacing:-0.02em;line-height:1.3}
+h1 .en{font-family:'Inter',sans-serif;font-weight:500;font-size:14px;color:var(--muted);margin-left:8px}
+.hero-desc{font-size:15px;color:var(--sub);margin-top:8px;line-height:1.7}
+.hero-desc strong{color:var(--navy);font-weight:600}
+.hero-kw{margin-top:12px;font-family:'Inter',sans-serif;font-size:13px;color:var(--orange);font-weight:600;letter-spacing:0.03em}
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;padding:28px 0}
+.stats .num{font-family:'Inter',sans-serif;font-size:28px;font-weight:800;color:var(--orange);line-height:1.2}
+.stats .num small{font-size:14px;font-weight:600}
+.stats .lbl{font-size:12px;color:var(--muted);margin-top:4px;font-weight:500}
+/* Section header */
+.sh{display:flex;align-items:baseline;gap:10px;margin-bottom:24px}
+.sh h2{font-size:20px;font-weight:800;letter-spacing:-0.01em}
+.sh .tag{font-size:11px;color:var(--orange);letter-spacing:0.08em;text-transform:uppercase}
+/* About */
+.about{font-size:15px;color:var(--sub);line-height:1.8}
+/* Timeline */
+.tl{position:relative;padding-left:28px}
+.tl::before{content:'';position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl-item{position:relative;padding-bottom:36px}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-26px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--white);border:2.5px solid var(--orange)}
+.tl-item.now .tl-dot{background:var(--orange);box-shadow:0 0 0 5px rgba(255,90,54,0.12)}
+.tl-co{font-size:16px;font-weight:700;line-height:1.4}
+.tl-role{font-size:13px;font-weight:600;color:var(--orange);margin-top:2px}
+.tl-period{font-family:'Inter',sans-serif;font-size:12px;color:var(--muted);margin-top:2px;font-weight:500}
+.tl-desc{margin-top:8px;list-style:none}
+.tl-desc li{font-size:13.5px;color:var(--sub);line-height:1.65;padding-left:14px;position:relative;margin-bottom:3px}
+.tl-desc li::before{content:'·';position:absolute;left:0;font-weight:700;color:var(--muted)}
+.tl-desc .orange{color:var(--orange);font-family:'Inter',sans-serif;font-weight:700}
+/* Awards */
+.aw-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0}
+.aw-item+.aw-item{border-top:1px solid var(--line)}
+.aw-icon{width:20px;height:20px;color:var(--orange);flex-shrink:0;margin-top:2px}
+.aw-icon svg{width:100%;height:100%}
+.aw-text{font-size:14px;color:var(--navy);font-weight:500;line-height:1.55}
+.aw-text .yr{font-family:'Inter',sans-serif;font-size:12px;color:var(--muted);font-weight:500;margin-left:6px}
+/* Strengths */
+.str-item{padding:16px 20px;border-left:3px solid var(--orange);margin-bottom:10px;background:var(--bg);border-radius:0 10px 10px 0}
+.str-item .t{font-size:14.5px;font-weight:600;color:var(--navy)}
+.str-item .s{font-size:12.5px;color:var(--muted);margin-top:2px}
+/* Education */
+.edu{font-size:15px;font-weight:500;color:var(--navy)}
+.edu span{font-family:'Inter',sans-serif;color:var(--muted);font-size:13px;margin-left:6px}
+/* Contact */
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ct-grid a{display:flex;align-items:center;gap:10px;padding:14px 16px;background:var(--bg);border-radius:10px;text-decoration:none;color:var(--navy);font-size:13px;font-weight:500;transition:background .2s}
+.ct-grid a:hover{background:var(--line)}
+.ct-grid a.full{grid-column:1/-1}
+.ct-grid .ci{width:18px;height:18px;color:var(--orange);flex-shrink:0}
+.ct-grid .ci svg{width:100%;height:100%}
+/* Footer */
+.ft{text-align:center;padding:32px 20px 40px;font-family:'Inter',sans-serif;font-size:12px;color:var(--muted)}
+/* Fade in */
+.fi{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+.fi.show{opacity:1;transform:translateY(0)}
+@media(max-width:640px){
+.card{padding:32px 22px;border-radius:14px}
+h1{font-size:26px}
+h1 .en{display:block;margin-left:0;margin-top:2px}
+.stats .num{font-size:24px}
+.ct-grid{grid-template-columns:1fr}
+.ct-grid a.full{grid-column:1}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card main-card">
+
+<!-- HERO -->
+<section class="fi">
+<div class="hero-top"><span class="dot"></span><span>Serial Entrepreneur · Marketer</span></div>
+<h1>윤제훈 <span class="en">Yun Jehoon</span></h1>
+<p class="hero-desc"><strong>20세에 시작해 11억을 만든</strong> 실행형 창업가.<br>아이디어를 매출로 바꾸고, 구조를 만듭니다.</p>
+<p class="hero-kw">Entrepreneur · Marketer · Builder</p>
+</section>
+
+<!-- STATS -->
+<div class="divider"></div>
+<section class="stats fi">
+<div><div class="num">11<small>억+</small></div><div class="lbl">누적 매출</div></div>
+<div><div class="num">6<small>개</small></div><div class="lbl">창업 · 사업</div></div>
+<div><div class="num">4<small>건</small></div><div class="lbl">수상 · 선정</div></div>
+</section>
+
+<!-- ABOUT -->
+<div class="divider"></div>
+<section class="fi">
+<div class="sh"><h2>About</h2><span class="tag serif-i">Profile</span></div>
+<p class="about">마케팅·영업·운영을 통합해 빠른 매출 전환과 수익 구조를 만듭니다. 아이디어 단계부터 실제 수익까지, 전 과정을 직접 설계하고 실행합니다. 실전 경험과 데이터를 기반으로 사업을 검증하고 확장해왔습니다.</p>
+</section>
+
+<!-- EXPERIENCE -->
+<div class="divider"></div>
+<section class="fi">
+<div class="sh"><h2>Experience</h2><span class="tag serif-i">Career</span></div>
+<div class="tl">
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-co">(주)디렉터홀딩스</div>
+<div class="tl-role">마케팅본부장</div>
+<div class="tl-period">2025</div>
+<ul class="tl-desc">
+<li>피부과 프랜차이즈 본사 마케팅 전략 및 예산 총괄</li>
+<li>디렉터의원 강남점 개원 마케팅 초기 전략 및 컨셉 기획</li>
+<li>사내 최연소 본부장 선임</li>
+</ul>
+</div>
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-co">산호초메디컬</div>
+<div class="tl-role">공동창업자</div>
+<div class="tl-period">2024 – 2025</div>
+<ul class="tl-desc">
+<li>대학생 대상 비급여 의료 플랫폼 기획 및 운영</li>
+<li>전국 주요 대학 총학생회 제휴 및 유입 채널 구축</li>
+<li>안과·치과·피부과 병의원 제휴를 통한 서비스 인프라 확보</li>
+</ul>
+</div>
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-co">유니브립 (UNIVLIP)</div>
+<div class="tl-role">공동창업자 · 대표</div>
+<div class="tl-period">2023 – 2025</div>
+<ul class="tl-desc">
+<li>대학생 타겟 광고대행사 창업, 1년 내 월 매출 <span class="orange">6,800만 원</span> 기록</li>
+<li>신한카드, 네이버페이, 필립모리스, 메이투 등 대기업 캠페인 수행</li>
+<li>동국대학교 캠퍼스타운 입주 기업 선정</li>
+</ul>
+</div>
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-co">림픽컴퍼니</div>
+<div class="tl-role">창업자 · 대표</div>
+<div class="tl-period">2023 – 2025</div>
+<ul class="tl-desc">
+<li>배드민턴 용품 커머스 사업 구축</li>
+<li>일 최대 <span class="orange">1,800만 원</span>, 월 최대 <span class="orange">7,300만 원</span> 매출 기록</li>
+<li>리닝, 삼화 배드민턴, KBB SPORTS 공식 판매사</li>
+</ul>
+</div>
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-co">에셋코치 (@assetcoach0)</div>
+<div class="tl-role">공동창업자</div>
+<div class="tl-period">2024</div>
+<ul class="tl-desc">
+<li>경제 콘텐츠 인스타그램 계정 구축, 팔로워 <span class="orange">3.5만 명</span> 확보</li>
+</ul>
+</div>
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-co">(주)텐덤</div>
+<div class="tl-role">PM</div>
+<div class="tl-period">2024</div>
+<ul class="tl-desc">
+<li>'애드캠퍼스' 및 '베어유' 서비스 기획</li>
+</ul>
+</div>
+
+<div class="tl-item now">
+<div class="tl-dot"></div>
+<div class="tl-co">대한민국 공군</div>
+<div class="tl-role">기반통신체계정비병</div>
+<div class="tl-period">2025 – 현재 (2027.08 전역)</div>
+<ul class="tl-desc">
+<li>통신 장비 유지보수 및 운용</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<div class="divider"></div>
+<section class="fi">
+<div class="sh"><h2>Highlights</h2><span class="tag serif-i">Honors</span></div>
+<div>
+<div class="aw-item">
+<div class="aw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+<div class="aw-text">건국대학교 '학생 창업 대표자 30인' 선정<span class="yr">2024</span></div>
+</div>
+<div class="aw-item">
+<div class="aw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+<div class="aw-text">Connect 창업 아이디어톤 최우수상 — 팀장<span class="yr">2024</span></div>
+</div>
+<div class="aw-item">
+<div class="aw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+<div class="aw-text">KBB SPORTS 전국 최다 판매처 선정<span class="yr">2024.12</span></div>
+</div>
+<div class="aw-item">
+<div class="aw-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+<div class="aw-text">토스증권 실전투자대회 Top 100, 3천만 원 리그<span class="yr">2025.05</span></div>
+</div>
+</div>
+</section>
+
+<!-- STRENGTHS -->
+<div class="divider"></div>
+<section class="fi">
+<div class="sh"><h2>Core Strengths</h2><span class="tag serif-i">Expertise</span></div>
+<div class="str-item"><div class="t">아이디어를 매출로 전환하는 실행력</div><div class="s">생각에 그치지 않고, 빠르게 시장에서 검증합니다</div></div>
+<div class="str-item"><div class="t">유입부터 수익화까지 비즈니스 구조 설계</div><div class="s">마케팅·영업·운영을 아우르는 통합 사업 설계</div></div>
+<div class="str-item"><div class="t">빠른 실행 기반 사업 검증 및 확장</div><div class="s">데이터와 실전 경험으로 스케일업을 만듭니다</div></div>
+</section>
+
+<!-- EDUCATION -->
+<div class="divider"></div>
+<section class="fi">
+<div class="sh"><h2>Education</h2><span class="tag serif-i">Academic</span></div>
+<p class="edu">건국대학교 산업공학과 재학<span>(2029.02 졸업 예정)</span></p>
+</section>
+
+<!-- CONTACT -->
+<div class="divider"></div>
+<section class="fi">
+<div class="sh"><h2>Contact</h2><span class="tag serif-i">Connect</span></div>
+<div class="ct-grid">
+<a href="tel:010-4170-1644"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>010-4170-1644</a>
+<a href="mailto:yjh4334@naver.com"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>yjh4334@naver.com</a>
+<a href="https://instagram.com/yunjehoon" target="_blank" class="full"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>@yunjehoon</a>
+</div>
+</section>
+
+</div><!-- /card -->
+</div><!-- /wrap -->
+
+<div class="ft">© 2026 Yun Jehoon</div>
+
+<script>
+const o=new IntersectionObserver((e)=>{e.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');o.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.fi').forEach(el=>o.observe(el));
+</script>
+</body>
+</html>
