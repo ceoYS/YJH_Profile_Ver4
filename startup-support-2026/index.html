@@ -25,6 +25,7 @@ a{color:inherit;text-decoration:none}.shell{width:min(1240px,calc(100% - 44px));
 .marquee{overflow:hidden;border-bottom:1px solid var(--line);border-top:1px solid var(--line);background:#070a10}.marquee-track{display:flex;width:max-content;padding:12px 0}.marquee span{font-size:11px;font-weight:800;color:#8d9aae;margin-right:44px;text-transform:uppercase;letter-spacing:.09em}.marquee b{color:#edf2fa}
 section{padding:110px 0}.section-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:end;margin-bottom:48px}.section-no{font-size:11px;color:var(--lime);font-weight:900;letter-spacing:.15em}.section-head h2{font-size:clamp(40px,5.4vw,74px);letter-spacing:-.065em;line-height:.98;margin:7px 0 0}.section-head p{margin:0;color:#92a0b4;font-size:15px;max-width:610px;justify-self:end}.section-head p b{color:#fff}
 .panel{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));box-shadow:0 28px 70px rgba(0,0,0,.2)}
+.action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.action-card{padding:28px;min-height:390px;display:flex;flex-direction:column;position:relative;overflow:hidden}.action-card:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--blue)}.action-card.now:before{background:var(--lime)}.action-card.six:before{background:var(--cyan)}.action-card.next:before{background:var(--amber)}.action-kicker{font-size:10px;font-weight:900;letter-spacing:.13em;color:#8191a7}.action-card h3{font-size:30px;line-height:1.04;letter-spacing:-.045em;margin:15px 0 10px}.action-card>p{font-size:13px;color:#9eacc0;margin:0 0 18px}.action-list{display:grid;gap:9px;margin-top:auto}.action-item{padding:13px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.018)}.action-item b{display:block;font-size:12px;color:#fff}.action-item span{display:block;font-size:10.5px;color:#8e9db0;margin-top:4px}.action-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.action-links .official{margin:0;padding:0;border:0}.priority-note{margin-top:16px;padding:26px 28px;display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center}.priority-note h3{font-size:24px;margin:0 0 7px}.priority-note p{margin:0;color:#9aa9bc;font-size:13px}
 .strategy-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:16px}.strategy-main{padding:38px;min-height:360px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.strategy-main:before{content:"";position:absolute;width:350px;height:350px;right:-140px;top:-140px;border:1px solid rgba(101,231,255,.22);border-radius:50%;box-shadow:0 0 0 45px rgba(101,231,255,.018),0 0 0 90px rgba(101,231,255,.012)}.strategy-main h3{font-size:clamp(28px,3.5vw,48px);letter-spacing:-.05em;line-height:1.05;margin:0;max-width:720px}.strategy-main p{max-width:720px;color:#a8b5c6;font-size:15px}.tag-row{display:flex;gap:8px;flex-wrap:wrap}.tag{padding:8px 10px;border-radius:999px;border:1px solid var(--line);font-size:11px;font-weight:800;color:#c9d2df}.tag.on{color:#dfffc7;border-color:rgba(182,255,107,.24);background:rgba(182,255,107,.05)}
 .rank-stack{display:grid;grid-template-rows:1fr 1fr;gap:16px}.rank{padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:170px}.rank small{font-size:10px;color:#7e8da3;font-weight:900;letter-spacing:.09em}.rank strong{font-size:38px;letter-spacing:-.055em}.rank em{font-style:normal;font-size:12px;color:#9eacc0}
 .guide-cta{margin-top:16px;padding:26px 30px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:linear-gradient(135deg,rgba(120,168,255,.1),rgba(182,255,107,.04))}.guide-cta h3{margin:0 0 7px;font-size:22px}.guide-cta p{margin:0;color:#95a4b7;font-size:13px}.pill-btn{display:inline-flex;align-items:center;gap:9px;padding:12px 15px;border-radius:999px;background:#f4f7fb;color:#061019;font-size:11px;font-weight:900;white-space:nowrap}.pill-btn i{font-style:normal;font-size:15px}
@@ -41,8 +42,8 @@ section{padding:110px 0}.section-head{display:grid;grid-template-columns:.75fr 1
 footer{padding:42px 0 calc(64px + env(safe-area-inset-bottom));border-top:1px solid var(--line);font-size:10px;color:#718198}
 .mobile-separator{display:none}
 .reveal{opacity:0;transform:translateY(28px)}
-@media(max-width:980px){.hero-row,.section-head,.strategy-grid,.callout,.region-alert{grid-template-columns:1fr}.region-grid{grid-template-columns:1fr}.region-card{min-height:0}.hero-row,.section-head,.strategy-grid,.callout{grid-template-columns:1fr}.watch-grid{grid-template-columns:1fr 1fr}.hero-side{display:grid;grid-template-columns:1fr 1fr;margin-top:18px}.section-head{gap:18px}.section-head p{justify-self:start}.people-grid{grid-template-columns:1fr}.univ-grid{grid-template-columns:1fr}.funding-viewport{overflow:visible}.funding-track{width:auto;display:grid;grid-template-columns:1fr 1fr;padding:0}.fund-card{width:auto;min-height:420px}.section-caption{display:none}.road-line{left:77px}.road-step{grid-template-columns:58px 1fr;gap:38px}.road-step:before{left:72px}}
-@media(max-width:720px){.region-alert{padding:22px}.region-card{padding:23px}.region-card h3{font-size:26px}.watch-grid{grid-template-columns:1fr}.watch{min-height:0}.watch .pill-btn{width:100%}.watch-note{padding:20px}
+@media(max-width:980px){.action-grid{grid-template-columns:1fr}.action-card{min-height:0}.priority-note{grid-template-columns:1fr}.hero-row,.section-head,.strategy-grid,.callout,.region-alert{grid-template-columns:1fr}.region-grid{grid-template-columns:1fr}.region-card{min-height:0}.hero-row,.section-head,.strategy-grid,.callout{grid-template-columns:1fr}.watch-grid{grid-template-columns:1fr 1fr}.hero-side{display:grid;grid-template-columns:1fr 1fr;margin-top:18px}.section-head{gap:18px}.section-head p{justify-self:start}.people-grid{grid-template-columns:1fr}.univ-grid{grid-template-columns:1fr}.funding-viewport{overflow:visible}.funding-track{width:auto;display:grid;grid-template-columns:1fr 1fr;padding:0}.fund-card{width:auto;min-height:420px}.section-caption{display:none}.road-line{left:77px}.road-step{grid-template-columns:58px 1fr;gap:38px}.road-step:before{left:72px}}
+@media(max-width:720px){.action-card{padding:23px}.action-card h3{font-size:27px}.priority-note{padding:22px}.region-alert{padding:22px}.region-card{padding:23px}.region-card h3{font-size:26px}.watch-grid{grid-template-columns:1fr}.watch{min-height:0}.watch .pill-btn{width:100%}.watch-note{padding:20px}
 .mobile-separator{display:flex;align-items:center;gap:11px;margin:2px 0;color:#67768d;font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
 .mobile-separator:before,.mobile-separator:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(255,255,255,.22))}
 .mobile-separator:after{background:linear-gradient(90deg,rgba(255,255,255,.22),transparent)}
@@ -81,7 +82,7 @@ footer{padding:42px 0 calc(64px + env(safe-area-inset-bottom));border-top:1px so
 <div class="signal"><small>MAX BUSINESS GRANT</small><strong>1억+</strong><span>사업별 최대한도 기준</span></div>
 </div>
 </div>
-<div class="hero-kpi hero-in"><div><b>3년</b><span>초기창업기업 핵심 기준</span></div><div><b>720만원</b><span>주요 고용장려금 / 1인</span></div><div><b>210만원</b><span>첨단분야 인턴십 / 월 약</span></div><div><b>4~5개월</b><span>내년 공고 전 증거 만들기</span></div></div>
+<div class="hero-kpi hero-in"><div><b>50~100%</b><span>청년창업 세액감면 가능 범위</span></div><div><b>2,000만원</b><span>광주 청년창업 기술고도 · 2026</span></div><div><b>4,000만원</b><span>AI 소상공인 사업화 · 2026 최대</span></div><div><b>6개월</b><span>비즈플러스카드 업력 기준</span></div></div>
 </div>
 </header>
 
@@ -89,16 +90,31 @@ footer{padding:42px 0 calc(64px + env(safe-area-inset-bottom));border-top:1px so
 
 <main>
 <section id="verdict"><div class="shell">
-<div class="section-head reveal"><div><span class="section-no">01 / VERDICT</span><h2>가능성보다 먼저,<br>순서를 설계합니다.</h2></div><p>현재 장점은 <b>나이와 업력</b>, 약점은 신규 사업자라면 아직 <b>매출·사용자·MVP가 없을 수 있다는 점</b>입니다. 자격이 되는 것과 실제 선정되는 것은 다른 문제입니다.</p></div>
-<div class="strategy-grid">
-<article class="panel strategy-main reveal"><div><h3>지금은 “많이 신청”보다<br>“선정될 이유를 만드는 시기”.</h3><p>2027년 1~3월까지 MVP → 시장검증 → 테스트 사용자 → 가능하면 첫 매출을 만들면, 지원사업 심사에서 단순 아이디어가 아니라 실제 진행 중인 사업으로 설명할 수 있습니다.</p></div><div class="tag-row"><span class="tag on">청년창업 조건 유리</span><span class="tag on">정보통신업 적합</span><span class="tag">제품형 BM 필요</span><span class="tag">시장검증 필요</span></div></article>
-<div class="rank-stack"><article class="panel rank reveal"><small>2027 PRIORITY 01</small><strong>청창사</strong><em>나이 + 업력 조건이 가장 정확히 맞음</em></article><article class="panel rank reveal"><small>2027 PRIORITY 02</small><strong>초기패키지</strong><em>MVP·사용자·첫 매출이 있으면 경쟁력 상승</em></article></div>
+<div class="section-head reveal"><div><span class="section-no">01 / DO THIS FIRST</span><h2>지원금 찾기 전에,<br>지금 챙길 것부터.</h2></div><p>막 사업자를 낸 지금은 1억원 공모만 기다릴 단계가 아닙니다. <b>세금·확인서·공간·보증처럼 바로 체감되는 제도</b>를 먼저 챙기고, 사업화자금은 제품과 실적을 만든 뒤 노리는 편이 훨씬 현실적입니다.</p></div>
+<div class="action-grid">
+<article class="panel action-card now reveal"><span class="action-kicker">NOW · 이번 주부터</span><h3>선정 경쟁 없이<br>먼저 챙기기</h3><p>조건만 맞으면 공모 선정과 별개로 활용할 수 있는 것들입니다.</p><div class="action-list">
+<div class="action-item"><b>청년창업중소기업 세액감면</b><span>2026 창업 기준 청년기업은 지역에 따라 소득세·법인세 50~100% 감면 가능. 정보통신업은 원칙적으로 대상 업종이며 암호화자산 매매·중개업 등은 제외.</span></div>
+<div class="action-item"><b>창업기업확인서</b><span>업력 7년 이내 창업기업이면 확인서 발급을 검토. 공공기관 창업기업제품 우선구매 시장에 접근할 때 유용.</span></div>
+<div class="action-item"><b>광주 1인창조기업지원센터</b><span>광주 트랙이 가능하다면 공실 발생 시 격월 모집. 사무공간 무상 + 시제품·마케팅·IP·멘토링.</span></div>
+</div><div class="action-links"><a class="official" target="_blank" href="https://www.easylaw.go.kr/CSP/CnpClsMainBtr.laf?ccfNo=4&cciNo=3&cnpClsNo=1&csmSeq=632">세액감면</a><a class="official" target="_blank" href="https://cert.k-startup.go.kr/">창업기업확인</a><a class="official" target="_blank" href="https://www.gicon.or.kr/menu.es?mid=a11015020000">1인창조센터</a></div></article>
+
+<article class="panel action-card six reveal"><span class="action-kicker">6 MONTHS · 업력 생기면</span><h3>운영비와 채용비<br>줄이기</h3><p>매출이 크지 않아도 사업을 유지하는 비용을 낮추는 제도부터 봅니다.</p><div class="action-list">
+<div class="action-item"><b>소상공인 비즈플러스카드</b><span>2026년에는 업력 6개월 이상 등 요건으로 최대 1,000만원 한도 사업용 카드 지원. 9월 개업이면 다음 해 3월 전후 조건 확인.</span></div>
+<div class="action-item"><b>청년일자리도약장려금</b><span>지식서비스·청년창업기업 등은 기준 피보험자 1인 이상 예외 가능. 기업지원 최대 720만원. 첫 채용 전에 운영기관 확인.</span></div>
+<div class="action-item"><b>두루누리·고용촉진장려금</b><span>첫 직원의 소득·고용보험 이력과 취업지원제도 참여 여부에 따라 실제 인건비 부담을 낮출 수 있음.</span></div>
+</div><div class="action-links"><a class="official" target="_blank" href="https://www.mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1066507&cbIdx=86">비즈플러스카드</a><a class="official" target="_blank" href="https://www.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000117&systId=SI00000318">도약장려금</a></div></article>
+
+<article class="panel action-card next reveal"><span class="action-kicker">NEXT ROUND · 2027 준비</span><h3>현금성 사업화자금<br>노리기</h3><p>MVP와 시장증거가 생긴 뒤부터 큰 사업화자금의 승산이 올라갑니다.</p><div class="action-list">
+<div class="action-item"><b>광주 청년창업 기술고도</b><span>2026년 광주TP는 만 39세 이하 청년창업기업 대상으로 사업화자금 2,000만원 사업을 운영. 광주 사업장이면 다음 모집 최우선 감시.</span></div>
+<div class="action-item"><b>혁신 소상공인 AI 활용지원</b><span>2026년 AI 활용모델 1,000개사 → 사업화 약 680개사, 최대 4,000만원(정부 80%·자부담 20%). AI 서비스라면 다음 공고 준비.</span></div>
+<div class="action-item"><b>청창사 + 초기창업패키지</b><span>제품형 BM, 사용자검증, 파일럿, 첫 매출을 만들어 2027 상반기 대형 사업화지원에 도전.</span></div>
+</div><div class="action-links"><a class="official" target="_blank" href="https://www.gjtp.or.kr/home/business.cs?act=view&bsnssId=2183">광주 2천만원 공고</a><a class="official" target="_blank" href="https://bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000123187">AI 4천만원 공고</a></div></article>
 </div>
-<article class="panel guide-cta reveal"><div><h3>정부지원사업 자체가 처음이라면?</h3><p>지원금·R&D·융자·보증·고용지원 차이부터 신청 → 평가 → 협약 → 집행 → 정산까지 먼저 이해하는 5분 입문 페이지가 연결되어 있습니다.</p></div><a class="pill-btn magnetic" href="basics.html">기초부터 알아보기 <i>↗</i></a></article>
+<article class="panel priority-note reveal"><div><h3>핵심은 “지원사업에 맞는 회사”가 아니라 “실제 사업하는 회사”를 만드는 것.</h3><p>홈페이지 외주·단순 대행보다 <b style="color:#fff">SaaS, AI 자동화, 금융·투자정보 데이터 서비스처럼 반복판매 가능한 자체 제품</b>이 만들어질수록 지원사업 선택지가 넓어집니다.</p></div><a class="pill-btn magnetic" href="basics.html">지원제도 5분 기초 <i>↗</i></a></article>
 </div></section>
 
 <section id="regional"><div class="shell">
-<div class="section-head reveal"><div><span class="section-no">02 / REGIONAL TRACKS</span><h2>광주 출신 + 강남 거주 가능성,<br>지역지원은 이렇게 봅니다.</h2></div><p><b>태어난 곳이나 집을 소유했다는 사실만으로 지원대상이 되지는 않습니다.</b> 실제 심사에서는 주민등록지·사업자등록 사업장·지사·연구소 소재지가 핵심입니다. 그래서 전국 공통 + 광주 트랙 + 강남·서울 트랙을 따로 봅니다.</p></div>
+<div class="section-head reveal"><div><span class="section-no">02 / LOCATION</span><h2>광주 출신 + 강남 거주 가능성,<br>지역지원은 이렇게 봅니다.</h2></div><p><b>태어난 곳이나 집을 소유했다는 사실만으로 지원대상이 되지는 않습니다.</b> 실제 심사에서는 주민등록지·사업자등록 사업장·지사·연구소 소재지가 핵심입니다. 그래서 전국 공통 + 광주 트랙 + 강남·서울 트랙을 따로 봅니다.</p></div>
 <article class="panel region-alert reveal"><div><h3>가장 먼저 확인할 두 주소</h3><p><b style="color:#fff">① 사업자등록증상 사업장 주소</b>와 <b style="color:#fff">② 주민등록상 주소</b>. 이 두 정보가 정해져야 광주·강남 지역사업의 실제 신청 가능 여부를 확정할 수 있습니다.</p></div><span class="tag on">주소가 자격을 결정</span></article>
 <div class="region-grid">
 <article class="panel region-card national reveal"><span class="region-label">TRACK A · 전국 공통</span><h3>지역과 무관하게 먼저</h3><p>33세·창업 1년 미만이라는 조건 자체로 준비할 수 있는 핵심 사업입니다.</p><div class="region-list"><div class="region-item"><b>청년창업사관학교</b><span>2027 상반기 최우선. 39세 이하 + 창업 3년 이내.</span></div><div class="region-item"><b>초기창업패키지</b><span>MVP·시장검증·첫 매출을 만들어 다음 모집 준비.</span></div><div class="region-item"><b>고용24 + 두루누리</b><span>직원 채용 직전에 기업·근로자 요건 확인.</span></div></div><a class="official" target="_blank" href="https://www.k-startup.go.kr/web/main/mainSection1.do">K-Startup 공고</a></article>
@@ -111,7 +127,7 @@ footer{padding:42px 0 calc(64px + env(safe-area-inset-bottom));border-top:1px so
 </div></section>
 
 <section id="funding" class="funding-wrap"><div class="shell">
-<div class="section-head reveal"><div><span class="section-no">03 / BUSINESS GRANTS</span><h2>사업화 자금,<br>네 개의 현실적 카드.</h2></div><p>2026년 공식 공고를 기준으로 <b>다음 모집을 준비하기 위한 비교</b>입니다. 2027년 금액·일정·중복수행 제한은 해당 연도 공고가 나오면 다시 확인해야 합니다.</p></div>
+<div class="section-head reveal"><div><span class="section-no">03 / 2027 BIG GRANTS</span><h2>사업화 자금,<br>네 개의 현실적 카드.</h2></div><p>2026년 공식 공고를 기준으로 <b>다음 모집을 준비하기 위한 비교</b>입니다. 2027년 금액·일정·중복수행 제한은 해당 연도 공고가 나오면 다시 확인해야 합니다.</p></div>
 <div class="funding-viewport"><div class="funding-track">
 <article class="panel fund-card"><div class="fund-top"><span class="fund-id">01 / BEST FIT</span><span class="status next">2027 준비</span></div><h3>청년창업사관학교</h3><p>39세 이하이면서 창업 3년 이내 대표자. 현재 조건에 가장 정확히 맞는 대표 사업입니다.</p><div class="fund-money">최대 1억원 <small>평균 0.7억원</small></div><div class="mini-grid"><div class="mini"><small>나이</small><b>39세 이하</b></div><div class="mini"><small>업력</small><b>창업 3년 이내</b></div></div><a class="official" target="_blank" href="https://mss.go.kr/site/ulsan/ex/bbs/View.do?bcIdx=1065217&cbIdx=254">중기부 2026 공고</a></article><div class="mobile-separator" aria-hidden="true"><span>다음 지원사업 · 02</span></div>
 <article class="panel fund-card"><div class="fund-top"><span class="fund-id">02 / CORE</span><span class="status next">2027 준비</span></div><h3>초기창업패키지</h3><p>창업 3년 이내 기업 대상. 신규기업도 가능하지만 이미 매출·MVP·사용자를 확보한 기업들과 경쟁합니다.</p><div class="fund-money">최대 1억원 <small>평균 0.5억원</small></div><div class="mini-grid"><div class="mini"><small>핵심</small><b>MVP·시장 증거</b></div><div class="mini"><small>경쟁</small><b>기존 초기기업 포함</b></div></div><a class="official" target="_blank" href="https://mss.go.kr/site/ulsan/ex/bbs/View.do?bcIdx=1065082&cbIdx=254">중기부 2026 공고</a></article><div class="mobile-separator" aria-hidden="true"><span>다음 지원사업 · 03</span></div>
@@ -122,7 +138,7 @@ footer{padding:42px 0 calc(64px + env(safe-area-inset-bottom));border-top:1px so
 </div></section>
 
 <section id="hiring"><div class="shell">
-<div class="section-head reveal"><div><span class="section-no">04 / HIRING SUPPORT</span><h2>직원을 뽑는 순간,<br>지원금의 종류가 바뀝니다.</h2></div><p>신규회사에는 사업화자금만큼 <b>채용비용 절감</b>이 체감될 수 있습니다. 사람을 먼저 뽑기보다, 채용 전에 기업과 근로자 요건을 확인하는 게 안전합니다.</p></div>
+<div class="section-head reveal"><div><span class="section-no">04 / HIRING</span><h2>직원을 뽑는 순간,<br>지원금의 종류가 바뀝니다.</h2></div><p>신규회사에는 사업화자금만큼 <b>채용비용 절감</b>이 체감될 수 있습니다. 사람을 먼저 뽑기보다, 채용 전에 기업과 근로자 요건을 확인하는 게 안전합니다.</p></div>
 <div class="people-grid">
 <article class="panel people reveal"><div class="icon">01</div><h3>청년일자리도약장려금</h3><div class="big">720만원 <small>/ 청년 1명 최대</small></div><p>수도권은 기업규모 및 취업애로청년 등 요건이 중요합니다. 신규 1인기업이라면 무조건 된다고 보면 안 됩니다.</p><a class="official" target="_blank" href="https://www.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000117&systId=SI00000318">고용24 공식</a></article><div class="mobile-separator" aria-hidden="true"><span>다음 인건비 지원 · 02</span></div>
 <article class="panel people reveal"><div class="icon">02</div><h3>고용촉진장려금</h3><div class="big">720만원 <small>/ 대상자 1명 연 최대</small></div><p>국민취업지원제도 등 요건을 충족한 구직자를 신규 고용하고 일정 기간 유지하는 경우 검토할 수 있습니다.</p><a class="official" target="_blank" href="https://www.work24.go.kr/cm/c/f/1100/selecSystInfo.do?systClId=SC00000119&systId=SI00000370">고용24 공식</a></article><div class="mobile-separator" aria-hidden="true"><span>다음 인건비 지원 · 03</span></div>
@@ -132,7 +148,7 @@ footer{padding:42px 0 calc(64px + env(safe-area-inset-bottom));border-top:1px so
 </div></section>
 
 <section id="university"><div class="shell">
-<div class="section-head reveal"><div><span class="section-no">05 / UNIVERSITY CO-OP</span><h2>대학생을 뽑는다면,<br>대학·지자체도 봅니다.</h2></div><p><b>대학생을 채용하면 대학이 자동으로 월급을 대신 주는 것은 아닙니다.</b> 대학·교육부·지자체 인턴십/CO-OP에 기업이 참여하고 학생과 매칭될 때 지원이 붙습니다.</p></div>
+<div class="section-head reveal"><div><span class="section-no">05 / STUDENT HIRING</span><h2>대학생을 뽑는다면,<br>대학·지자체도 봅니다.</h2></div><p><b>대학생을 채용하면 대학이 자동으로 월급을 대신 주는 것은 아닙니다.</b> 대학·교육부·지자체 인턴십/CO-OP에 기업이 참여하고 학생과 매칭될 때 지원이 붙습니다.</p></div>
 <div class="univ-grid">
 <article class="panel univ reveal"><span class="status now">IT/AI면 주목</span><h3>교육부 첨단분야 인턴십</h3><p>AI 등 첨단분야 참여 대학생과 기업을 매칭. 기업이 급여를 지급하고 전문기관이 기업에 인턴십 지원금을 지급하는 구조입니다.</p><div class="fund-money">월 약 210만원 <small>/ 학생 1인</small></div><div class="mini-grid"><div class="mini"><small>기간</small><b>4~15주</b></div><div class="mini"><small>추천</small><b>AI·IT 직무</b></div></div><a class="official" target="_blank" href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105233&lev=0&m=020402&opType=N&page=1&s=moe&searchType=null&statusYN=W">교육부 2026 공식자료</a></article><div class="mobile-separator" aria-hidden="true"><span>다음 대학 연계 지원 · 02</span></div>
 <article class="panel univ reveal"><span class="status now">경기도 대학연계</span><h3>대학생 드림링크 직무실습</h3><p>참여대학 협약기업이 대학생 현장실습생을 운영하고, 기업은 학생 급여와 4대보험을 보장하면서 운영지원금을 받습니다.</p><div class="fund-money">월 150만원 <small>/ 학생 1인 기업지원</small></div><div class="mini-grid"><div class="mini"><small>학생 급여</small><b>월 약 215.7만원↑</b></div><div class="mini"><small>핵심</small><b>참여대학 협약</b></div></div><a class="official" target="_blank" href="https://www.gg.go.kr/contents/contents.do?ciIdx=987328&menuId=1534176">경기도 공식 안내</a></article><div class="mobile-separator" aria-hidden="true"><span>다음 대학 연계 지원 · 03</span></div>
@@ -143,19 +159,17 @@ footer{padding:42px 0 calc(64px + env(safe-area-inset-bottom));border-top:1px so
 </div></section>
 
 <section id="roadmap"><div class="shell">
-<div class="section-head reveal"><div><span class="section-no">06 / ROADMAP</span><h2>앞으로 5개월,<br>사업 자체를 증거로 만듭니다.</h2></div><p>지원사업을 받기 위해 사업을 꾸미는 방식보다, <b>실제 사업 진행을 평가자료로 전환</b>하는 방식이 훨씬 강합니다.</p></div>
-<div class="road">
-<div class="road-line"></div>
-<div class="road-step reveal"><time>09—10</time><article class="panel"><h3>사업모델 하나로 좁히기</h3><p>홈페이지 외주·대행보다 SaaS, AI솔루션, 플랫폼처럼 반복판매 가능한 제품을 명확하게 정의합니다.</p></article></div>
-<div class="road-step reveal"><time>10—11</time><article class="panel"><h3>MVP + 사용자 인터뷰</h3><p>실제로 보여줄 제품을 만들고 잠재 사용자의 반응을 기록합니다. 채용한다면 고용24 및 대학 연계 지원의 자격을 먼저 확인합니다.</p></article></div>
-<div class="road-step reveal"><time>11—12</time><article class="panel"><h3>테스트 사용자 + 첫 매출</h3><p>사용의향서, 파일럿, 유료 사용자·구매자 등 사업이 실제로 움직인다는 증거를 확보합니다.</p></article></div>
-<div class="road-step reveal"><time>12—01</time><article class="panel"><h3>사업계획서 증거화</h3><p>시장·경쟁·가격·BM·개발계획·지원금 사용처를 실데이터와 연결합니다.</p></article></div>
-<div class="road-step reveal"><time>2027 H1</time><article class="panel"><h3>청창사 + 초기패키지 중심 신청</h3><p>공고가 나오면 자격·지원액·중복수행 제한을 다시 확인하고 실제 실적을 중심으로 신청합니다.</p></article></div>
-</div>
-</div></section>
+<div class="section-head reveal"><div><span class="section-no">06 / EXECUTION</span><h2>지금부터 2027년까지,<br>이 순서로 움직입니다.</h2></div><p>“공고 뜨면 신청”이 아니라 <b>지금 받을 수 있는 혜택을 챙기면서 선정될 실적을 동시에 만드는 일정</b>입니다.</p></div>
+<div class="road"><div class="road-line"></div>
+<div class="road-step reveal"><time>이번 주</time><article class="panel"><h3>세액감면 + 창업기업확인부터 체크</h3><p>세무대리인 또는 국세 상담을 통해 청년창업중소기업 감면 적용 업종·창업 해당 여부를 확인합니다. 동시에 창업기업확인서 발급 가능 여부를 확인합니다.</p></article></div>
+<div class="road-step reveal"><time>09—10</time><article class="panel"><h3>사업모델 한 개로 좁히고 MVP 제작</h3><p>AI 자동화, 투자정보 SaaS, 데이터 서비스 등 자체 제품을 하나 정합니다. 광주 사업장이면 청년창업 특례보증·1인창조센터도 병행 확인합니다.</p></article></div>
+<div class="road-step reveal"><time>10—12</time><article class="panel"><h3>사용자 10명 + 파일럿 1~3건</h3><p>사용자 인터뷰, 사용의향서, 파일럿 계약, 첫 유료결제를 확보합니다. 2027년 지원사업의 핵심 증거가 됩니다.</p></article></div>
+<div class="road-step reveal"><time>+6개월</time><article class="panel"><h3>비즈플러스카드·채용지원 검토</h3><p>업력 6개월 조건이 붙는 지원과 첫 채용 비용절감 제도를 확인합니다. 도약장려금은 기준 피보험자 수와 채용대상 요건을 반드시 사전에 확인합니다.</p></article></div>
+<div class="road-step reveal"><time>2027 H1</time><article class="panel"><h3>현금성 사업화자금 집중 신청</h3><p>청년창업사관학교·초기창업패키지를 기본으로, 광주 사업장이면 청년창업 기술고도, AI 서비스라면 혁신 소상공인 AI 지원의 재공고도 같이 확인합니다.</p></article></div>
+</div></div></section>
 
 <section id="watch"><div class="shell">
-<div class="section-head reveal"><div><span class="section-no">07 / WHERE TO WATCH</span><h2>공고는 여기서<br>보면 됩니다.</h2></div><p>지금처럼 막 사업자를 낸 단계에서는 한 사이트만 보는 것보다 <b>창업공고 + 중소기업공고 + 고용지원 + R&amp;D + 지역공고</b>를 나눠서 보는 게 가장 빠릅니다.</p></div>
+<div class="section-head reveal"><div><span class="section-no">07 / WATCHLIST</span><h2>공고는 여기서<br>보면 됩니다.</h2></div><p>지금처럼 막 사업자를 낸 단계에서는 한 사이트만 보는 것보다 <b>창업공고 + 중소기업공고 + 고용지원 + R&amp;D + 지역공고</b>를 나눠서 보는 게 가장 빠릅니다.</p></div>
 <div class="watch-grid">
 <article class="panel watch reveal"><span class="watch-no">01 / FIRST</span><h3>K-Startup</h3><p>청년창업사관학교, 초기창업패키지 같은 창업지원사업은 여기부터 봅니다. 창업단계·연령·지원분야별로 걸러볼 수 있습니다.</p><a class="pill-btn magnetic" target="_blank" href="https://www.k-startup.go.kr/web/main/mainSection1.do">창업공고 찾기 <i>↗</i></a></article>
 <article class="panel watch reveal"><span class="watch-no">02 / WIDE SEARCH</span><h3>기업마당</h3><p>중앙부처·지자체·공공기관 지원사업을 한 번에 봅니다. 창업뿐 아니라 인력·기술·금융·경영 지원까지 같이 확인하기 좋습니다.</p><a class="pill-btn magnetic" target="_blank" href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200View.do?schPblancDiv=01">진행중 공고 보기 <i>↗</i></a></article>
@@ -193,6 +207,11 @@ footer{padding:42px 0 calc(64px + env(safe-area-inset-bottom));border-top:1px so
 <a class="source-card reveal" target="_blank" href="https://www.gangnam.go.kr/contents/SME_LoanSupport/1/view.do?mid=ID02_01080901"><b>강남 중소기업육성기금</b><span>사업자등록 1년 경과 후 검토</span></a>
 <a class="source-card reveal" target="_blank" href="https://seoulfintechlab.kr/"><b>서울핀테크랩</b><span>멘토링·규제·입주·오픈이노베이션</span></a>
 <a class="source-card reveal" target="_blank" href="https://www.seoulaihub.kr/board/board_basic/board_detail.asp?act=view&bd_num=00000001702026000046&pageNum=4&scrID=0000000170&ssubNum=1&subNum=1"><b>서울 AI 허브 멤버십</b><span>서울 소재 AI 스타트업</span></a>
+<a class="source-card reveal" target="_blank" href="https://www.easylaw.go.kr/CSP/CnpClsMainBtr.laf?ccfNo=4&cciNo=3&cnpClsNo=1&csmSeq=632"><b>청년창업중소기업 세액감면</b><span>찾기쉬운 생활법령 · 2026 적용률</span></a>
+<a class="source-card reveal" target="_blank" href="https://cert.k-startup.go.kr/"><b>창업기업확인시스템</b><span>창업기업 확인서 신청</span></a>
+<a class="source-card reveal" target="_blank" href="https://www.gicon.or.kr/menu.es?mid=a11015020000"><b>광주 1인창조기업지원센터</b><span>공간·사업화·멘토링</span></a>
+<a class="source-card reveal" target="_blank" href="https://bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000123187"><b>혁신 소상공인 AI 활용지원</b><span>2026 · 사업화 최대 4,000만원</span></a>
+<a class="source-card reveal" target="_blank" href="https://www.mss.go.kr/site/smba/ex/bbs/View.do?bcIdx=1066507&cbIdx=86"><b>소상공인 비즈플러스카드</b><span>2026 · 업력 6개월 이상 등</span></a>
 </div>
 </div></section>
 </main>
